@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timer Mundur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #222;
+      color: white;
+    }
+    #timer {
+      font-size: 48px;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    input, button {
+      font-size: 18px;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 6px;
+      border: none;
+    }
+    button {
+      background-color: #0a74da;
+      color: white;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+    input[type="number"] {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Timer Mundur</h2>
+
+  <label>Menit: <input type="number" id="minutes" min="0" value="0" /></label>
+  <label>Detik: <input type="number" id="seconds" min="0" max="59" value="10" /></label>
+  <br>
+  <button id="startBtn">Mulai</button>
+  <button id="resetBtn" disabled>Reset</button>
+
+  <div id="timer">00:00</div>
+
+  <script src="timermundur.js"></script>
+</body>
+</html>

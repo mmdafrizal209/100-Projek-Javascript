@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stopwatch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #222;
+      color: white;
+    }
+    #display {
+      font-size: 60px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background-color: #0a74da;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:hover:not(:disabled) {
+      background-color: #065a9e;
+    }
+    button:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <h2>Stopwatch</h2>
+  <div id="display">00:00:00</div>
+  <button id="startBtn">Mulai</button>
+  <button id="stopBtn" disabled>Berhenti</button>
+  <button id="resetBtn" disabled>Reset</button>
+
+  <script src="stopwacth.js"></script>
+</body>
+</html>

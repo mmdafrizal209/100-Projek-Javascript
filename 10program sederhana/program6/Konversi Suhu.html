@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Konversi Suhu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #dcd5f8;
+      text-align: center;
+    }
+
+    input, select {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #hasil {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Konversi Suhu</h2>
+  <input type="number" id="nilaiSuhu" placeholder="Masukkan suhu">
+  <select id="dari">
+    <option value="c">Celsius</option>
+    <option value="f">Fahrenheit</option>
+    <option value="k">Kelvin</option>
+  </select>
+  <select id="ke">
+    <option value="c">Celsius</option>
+    <option value="f">Fahrenheit</option>
+    <option value="k">Kelvin</option>
+  </select>
+  <br>
+  <button onclick="konversiSuhu()">Konversi</button>
+
+  <div id="hasil"></div>
+
+  <script src="Konversi Suhu.js"></script>
+</body>
+</html>
