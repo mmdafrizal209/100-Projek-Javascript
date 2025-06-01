@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volume Limas Segitiga</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    #hasil {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hitung Volume Limas Segitiga</h1>
+    <input type="number" id="alas" placeholder="Panjang alas segitiga (a)" />
+    <input type="number" id="tinggiAlas" placeholder="Tinggi segitiga alas (tₐ)" />
+    <input type="number" id="tinggiLimas" placeholder="Tinggi limas (tₗ)" />
+    <button onclick="hitungVolume()">Hitung Volume</button>
+    <div id="hasil"></div>
+  </div>
+  <script src="limassegitiga.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luas Jajar Genjang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3e5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 300px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #8e24aa;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #6a1b9a;
+    }
+
+    #hasil {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #8e24aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Luas Jajar Genjang</h1>
+    <input type="number" id="alas" placeholder="Alas (a)" />
+    <input type="number" id="tinggi" placeholder="Tinggi (t)" />
+    <button onclick="hitungLuas()">Hitung Luas</button>
+    <div id="hasil"></div>
+  </div>
+  <script src="jajargenjang.js"></script>
+</body>
+</html>

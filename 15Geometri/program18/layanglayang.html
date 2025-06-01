@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumus Layang-Layang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e1f5fe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #0288d1;
+    }
+
+    input {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 48%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #01579b;
+    }
+
+    #hasil {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #0288d1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rumus Layang-Layang</h1>
+
+    <h3>Luas</h3>
+    <input type="number" id="diagonal1" placeholder="Diagonal 1 (d₁)">
+    <input type="number" id="diagonal2" placeholder="Diagonal 2 (d₂)">
+    <button onclick="hitungLuas()">Hitung Luas</button>
+
+    <h3>Keliling</h3>
+    <input type="number" id="sisi1" placeholder="Sisi pertama (s₁)">
+    <input type="number" id="sisi2" placeholder="Sisi kedua (s₂)">
+    <button onclick="hitungKeliling()">Hitung Keliling</button>
+
+    <div id="hasil"></div>
+  </div>
+  <script src="layanglayang.js"></script>
+</body>
+</html>

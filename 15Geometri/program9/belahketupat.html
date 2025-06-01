@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Luas Belah Ketupat</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fff8dc;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    h1 { text-align: center; }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover { background-color: #e68900; }
+
+    #hasil {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Luas Belah Ketupat</h1>
+  <input type="number" id="d1" placeholder="Diagonal 1 (d1)">
+  <input type="number" id="d2" placeholder="Diagonal 2 (d2)">
+  <button onclick="hitungLuas()">Hitung</button>
+  <p id="hasil"></p>
+  <script src="belahketupat.js"></script>
+</body>
+</html>
