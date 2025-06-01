@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game 1: Tebak Angka</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #4e54c8;
+    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  .container {
+    background: rgba(0,0,0,0.4);
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    width: 320px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 0 20px #6f72dd;
+  }
+  input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1rem;
+    box-sizing: border-box;
+  }
+  button {
+    margin-top: 1rem;
+    width: 100%;
+    background: #6f72dd;
+    border: none;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #514f9e;
+  }
+  .message {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-height: 2em;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Tebak Angka (1-100)</h2>
+    <input type="number" id="guessInput" placeholder="Masukkan angka tebakan" min="1" max="100" />
+    <button id="guessBtn">Tebak</button>
+    <div class="message" id="message"></div>
+    <button id="resetBtn" style="margin-top: 1em; display:none;">Main Lagi</button>
+  </div>
+  <script src="Tebak Angka.js"></script>
+</body>
+</html>

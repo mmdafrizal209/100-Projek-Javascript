@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game 10: Game Labirin Sederhana</title>
+<style>
+  body, html {
+    margin: 0; padding: 0;
+    height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    background: #252525;
+  }
+  #maze {
+    background: white;
+    box-sizing: content-box;
+  }
+  .cell {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    float: left;
+    position: relative;
+  }
+  .wall-top {
+    border-top: 4px solid black;
+  }
+  .wall-left {
+    border-left: 4px solid black;
+  }
+  .wall-right {
+    border-right: 4px solid black;
+  }
+  .wall-bottom {
+    border-bottom: 4px solid black;
+  }
+  .player {
+    background-color: #3498db;
+  }
+  .goal {
+    background-color: #2ecc71;
+  }
+  #info {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-family: sans-serif;
+  }
+</style>
+</head>
+<body>
+<div>
+  <canvas id="maze" width="400" height="400"></canvas>
+  <div id="info">Gunakan tombol panah untuk bergerak dalam labirin.</div>
+</div>
+<script src="Game Labirin Sederhana.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game 9: Permainan Matematika Cepat</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f0e68c;
+    margin: 0; padding: 0;
+    display: flex; justify-content:center; align-items:center;
+    height: 100vh;
+    color: #555;
+  }
+  .container {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 20px #888;
+  }
+  button {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background: #f4a261;
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  button:hover {
+    background: #dd8e3c;
+  }
+  input {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .question {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #264653;
+  }
+  .message {
+    margin-top: 1.2rem;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Permainan Matematika Cepat</h2>
+    <div class="question" id="question"></div>
+    <input type="number" id="answerInput" placeholder="Masukkan Jawaban" />
+    <button id="submitBtn">Jawab</button>
+    <div class="message" id="message"></div>
+  </div>
+  <script src="Permainan Matematika Cepat.js"></script>
+</body>
+</html>

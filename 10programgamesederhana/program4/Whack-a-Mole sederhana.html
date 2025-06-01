@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game 4: Whack-a-Mole sederhana</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #2e2e2e;
+    margin: 0; padding: 0;
+    color: white;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
+  }
+  h2 {
+    margin: 1rem 0;
+  }
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 15px;
+    margin-bottom: 1rem;
+  }
+  .hole {
+    width: 100px;
+    height: 100px;
+    background: #444;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+  }
+  .mole {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #f1c40f;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    display: none;
+  }
+  .mole.active {
+    display: block;
+  }
+  #score {
+    font-size: 1.5rem;
+  }
+  button {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #f39c12;
+    font-weight: bold;
+    color: #332a0f;
+    margin-bottom: 1rem;
+  }
+  button:hover {
+    background: #d48806;
+  }
+</style>
+</head>
+<body>
+  <h2>Whack-a-Mole sederhana</h2>
+  <button id="startBtn">Mulai Game</button>
+  <div class="game-container" id="gameContainer">
+    <!-- 9 holes -->
+  </div>
+  <div id="score">Skor: 0</div>
+  <script src="Whack-a-Mole sederhana.js"></script>
+</body>
+</html>

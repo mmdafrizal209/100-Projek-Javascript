@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game 6: Memory Card Game</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #1e90ff, #87ceeb);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  .container {
+    background: rgba(0,0,0,0.25);
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    max-width: 360px;
+    width: 90%;
+    text-align: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 12px;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .card {
+    width: 70px;
+    height: 70px;
+    background-color: #3498db;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+  }
+  .card.flipped,
+  .card.matched {
+    background-color: #1abc9c;
+    cursor: default;
+  }
+  .card div {
+    font-size: 2rem;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    user-select: none;
+  }
+  #status {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  button#resetBtn {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    color: #3498db;
+    background: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button#resetBtn:hover {
+    background: #e1f5f4;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Memory Card Game</h2>
+    <div class="grid" id="grid"></div>
+    <div id="status"></div>
+    <button id="resetBtn">Mulai Ulang</button>
+  </div>
+  <script src="Memory Card Game.js"></script>
+</body>
+</html>

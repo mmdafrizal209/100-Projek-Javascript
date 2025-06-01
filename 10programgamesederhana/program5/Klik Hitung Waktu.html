@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game 5: Klik Hitung Waktu</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+    color: #222;
+  }
+  .container {
+    text-align: center;
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #ccc;
+    max-width: 320px;
+    width: 90%;
+  }
+  button {
+    padding: 1.2rem 2rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    font-weight: 700;
+    transition: background 0.3s ease;
+  }
+  button:hover:not(:disabled) {
+    background: #2c80b4;
+  }
+  button:disabled {
+    background: #a0c4e8;
+    cursor: not-allowed;
+  }
+  .score {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Game Klik Hitung Waktu</h2>
+    <button id="clickBtn">Klik Saya!</button>
+    <div class="score" id="score">0</div>
+  </div>
+  <script src="Klik Hitung Waktu.js"></script>
+</body>
+</html>
