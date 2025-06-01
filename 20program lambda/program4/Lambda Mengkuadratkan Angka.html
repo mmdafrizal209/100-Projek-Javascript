@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lambda Mengkuadratkan Angka</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #efe9f4;
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(78, 35, 117, 0.2);
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+  }
+  input, button {
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #c5b4db;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  input:focus {
+    border-color: #8a4fff;
+    outline: none;
+  }
+  button {
+    background: #8a4fff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button:hover {
+    background: #6a39cc;
+  }
+  .result {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: #4e2575;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Mengkuadratkan Angka</h2>
+    <input id="numberInput" type="number" placeholder="Masukkan angka" />
+    <button id="squareBtn">Hitung Kuadrat</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Mengkuadratkan Angka.js"></script>
+</body>
+</html>

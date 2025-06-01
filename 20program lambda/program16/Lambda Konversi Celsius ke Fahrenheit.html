@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lambda Konversi Celsius ke Fahrenheit</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #ffe6e6;
+    margin: 0; padding: 0;
+    display: flex; justify-content:center; align-items:center;
+    height: 100vh;
+    color: #440000;
+  }
+  .container {
+    background: #fff0f0;
+    padding: 2rem 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(196, 36, 36, 0.3);
+    max-width: 360px;
+    width: 90%;
+    text-align: center;
+  }
+  input, button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #cd5c5c;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  input:focus {
+    border-color: #a94444;
+    outline: none;
+  }
+  button {
+    background-color: #a94444;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+  }
+  button:hover {
+    background-color: #7f3434;
+  }
+  .result {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Konversi Celsius ke Fahrenheit</h2>
+    <input id="celsiusInput" type="number" placeholder="Masukkan suhu dalam °C" />
+    <button id="convertBtn">Konversi</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Konversi Celsius ke Fahrenheit.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lambda Menghitung Faktorial</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #faf3e0;
+    margin: 0; padding: 0;
+    display:flex; justify-content:center; align-items:center;
+    height: 100vh;
+  }
+  .container {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(175,133,69,0.3);
+    max-width: 360px;
+    width: 90%;
+    text-align: center;
+  }
+  input, button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d3b87e;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  input:focus {
+    outline: none;
+    border-color: #a87c28;
+  }
+  button {
+    background-color: #a87c28;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+  }
+  button:hover {
+    background-color: #825f19;
+  }
+  .result {
+    margin-top: 1.7rem;
+    font-weight: 700;
+    color: #744f11;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Lambda Menghitung Faktorial</h2>
+  <input id="numInput" type="number" min="0" placeholder="Masukkan angka >= 0" />
+  <button id="calculateBtn">Hitung Faktorial</button>
+  <div class="result" id="result"></div>
+</div>
+<script src="Lambda Menghitung Faktorial.js"></script>
+</body>
+</html>

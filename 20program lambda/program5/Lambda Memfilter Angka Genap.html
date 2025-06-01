@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> Lambda Memfilter Angka Genap</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+    color: #eeeeee;
+  }
+  .container {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+  }
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+  }
+  button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #27ae60;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #1e8449;
+  }
+  .result {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    word-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Memfilter Angka Genap</h2>
+    <textarea id="arrayInput" placeholder="Masukkan angka, pisahkan dengan koma"></textarea>
+    <button id="filterBtn">Filter Angka Genap</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Memfilter Angka Genap.js"></script>
+</body>
+</html>

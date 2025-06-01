@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> Lambda Mengecek Palindrom</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(238, 122, 146, 0.5);
+    max-width: 360px;
+    width: 90%;
+    text-align: center;
+  }
+  input, button {
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    border: 1px solid #e86a87;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  input:focus {
+    outline: none;
+    border-color: #e86a87;
+  }
+  button {
+    background-color: #e86a87;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #d45f7a;
+  }
+  .result {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #cc3457;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Mengecek Palindrom</h2>
+    <input id="textInput" type="text" placeholder="Masukkan kata atau kalimat" />
+    <button id="checkBtn">Cek Palindrom</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Mengecek Palindrom.js"></script>
+</body>
+</html>

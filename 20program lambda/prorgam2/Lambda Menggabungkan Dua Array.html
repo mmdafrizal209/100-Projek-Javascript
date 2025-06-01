@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> Lambda Menggabungkan Dua Array</title>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: #e8f0fe;
+    margin: 0; padding: 0;
+    display: flex; justify-content:center; align-items:center;
+    height: 100vh;
+    color: #152935;
+  }
+  .container {
+    background: white;
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(21, 41, 53, 0.2);
+  }
+  textarea {
+    width: 100%;
+    height: 70px;
+    margin-top: 0.7rem;
+    border-radius: 12px;
+    border: 1px solid #c2d3e8;
+    font-size: 1rem;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    font-family: monospace;
+    resize: none;
+  }
+  button {
+    margin-top: 1rem;
+    background-color: #39739d;
+    color: white;
+    border: none;
+    padding: 0.85rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #2a5671;
+  }
+  .result {
+    margin-top: 1.7rem;
+    font-weight: 700;
+    font-size: 1.15rem;
+    word-break: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Menggabungkan Dua Array</h2>
+    <label>Array 1 (pisahkan angka dengan koma):</label>
+    <textarea id="array1Input" placeholder="Contoh: 1, 2, 3"></textarea>
+    <label>Array 2 (pisahkan angka dengan koma):</label>
+    <textarea id="array2Input" placeholder="Contoh: 4, 5, 6"></textarea>
+    <button id="mergeBtn">Gabungkan</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Menggabungkan Dua Array.js"></script>
+</body>
+</html>

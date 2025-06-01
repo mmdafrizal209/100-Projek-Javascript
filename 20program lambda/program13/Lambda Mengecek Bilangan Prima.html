@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lambda Mengecek Bilangan Prima</title>
+<style>
+  body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  .container {
+    background: rgba(0,0,0,0.3);
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+  input, button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+  }
+  input {
+    color: #333;
+  }
+  button {
+    background: #2f3192;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+  }
+  button:hover {
+    background: #23266c;
+  }
+  .result {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Mengecek Bilangan Prima</h2>
+    <input id="numInput" type="number" min="2" placeholder="Masukkan angka >= 2" />
+    <button id="checkBtn">Cek Prima</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Mengecek Bilangan Prima.js"></script>
+</body>
+</html>

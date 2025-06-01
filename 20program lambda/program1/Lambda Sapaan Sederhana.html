@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proyek 1: Lambda Sapaan Sederhana</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+  }
+  input, button {
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  input:focus {
+    outline: none;
+    border-color: #5c9ded;
+  }
+  button {
+    background-color: #5c9ded;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #477ccc;
+  }
+  .result {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Sapaan Sederhana</h2>
+    <input id="nameInput" type="text" placeholder="Masukkan nama Anda" />
+    <button id="greetBtn">Sapa Saya</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Sapaan Sederhana.js"></script>
+</body>
+</html>

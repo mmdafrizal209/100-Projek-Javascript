@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lambda Memeriksa Tahun Kabisat</title>
+<style>
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+    margin: 0; padding: 0;
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  .container {
+    background: rgba(0,0,0,0.3);
+    padding: 2rem 2.5rem;
+    border-radius: 20px;
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
+  input, button {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #1769aa;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+  }
+  button:hover {
+    background-color: #0d3a6d;
+  }
+  .result {
+    margin-top: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    word-break: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lambda Memeriksa Tahun Kabisat</h2>
+    <input id="yearInput" type="number" min="0" placeholder="Masukkan tahun" />
+    <button id="checkBtn">Cek Kabisat</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="Lambda Memeriksa Tahun Kabisat.js"></script>
+</body>
+</html>
